@@ -1,0 +1,10 @@
+.button{
+    color: #c0c0c0;
+}
+ion-content {
+    width: calc(103% + 15px);
+    
+  }
+  ion-content::part(scroll) {
+    padding-right: 15px;
+  }

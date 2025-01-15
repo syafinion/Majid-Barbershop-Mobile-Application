@@ -1,0 +1,73 @@
+<ion-header class="ion-no-border">
+  <ion-list lines="none">
+    <ion-item color="brown" menu="main-menu">
+      <ion-menu-button menu="main-menu" slot="start"></ion-menu-button>
+    </ion-item>
+    <ion-item color="brown">
+    <ion-label style="font-size: large;">Hi, {{ user.displayName }}</ion-label>
+    <ion-avatar slot="end">
+      <img src="assets/logo2.png"/>
+    </ion-avatar>
+  </ion-item>
+  </ion-list>
+  <div class="popover">
+    <ion-button routerLink="/booking">
+      <ion-icon slot="start" name="add"></ion-icon> Ready For New Hairstyle?
+    </ion-button>
+  </div>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="ion-margin-top">
+  <div class="title ion-padding">
+    <h2 class="font-bold">Popular Hairstyle</h2>
+    <ion-button slot="end" size="small" shape="round" color="brown">Book</ion-button>
+  </div>
+
+    <ion-row>
+    <ion-slides [options]="{ slidesPerView: '1.5'}">
+      <ion-slide *ngFor="let product of featuredProducts">
+          <ion-card class="bgCard"  routerLink="/item-details">
+          <ion-card-header>
+            <ion-label>{{ product.name }}
+            </ion-label>
+            </ion-card-header>
+          <ion-card-content>
+          <img src="{{ product.image }}"/>
+        </ion-card-content>
+      </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </ion-row>
+</ion-grid>
+
+
+<ion-grid class="ion-margin-top">
+  <div class="title ion-padding">
+    <h2 class="font-bold">Services</h2>
+    <ion-button slot="end" size="small" shape="round" color="brown">Book</ion-button>
+  </div>
+
+    <ion-row>
+    <ion-slides [options]="{ slidesPerView: '1.1'}">
+      <ion-slide *ngFor="let product of bestSellProducts">
+          <ion-card class="featured"  routerLink="/item-details">
+          <ion-card-header>
+            <img src="{{ product.image }}" />
+            </ion-card-header>
+          <ion-card-content>
+            <ion-item lines="none">
+<ion-label>
+              <p slot="start"><b>{{ product.name }}</b></p>
+              <p>{{product.category}}</p>
+            </ion-label>
+              <p slot="end"><b>RM{{ product.price }}</b></p>
+
+              </ion-item>      
+        </ion-card-content>
+      </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </ion-row>
+</ion-grid>
+</ion-content>

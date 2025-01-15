@@ -1,0 +1,20 @@
+
+ion-content {
+    margin-bottom: 30px;
+      // overwrite inline styles
+      --offset-bottom: auto !important;
+      --overflow: hidden;
+      overflow: auto;
+      &::-webkit-scrollbar {
+       display: none;
+      }
+    background: linear-gradient(315deg, #000000 0%, #422419 74%);
+  }
+  ion-card {
+    border-radius: 15px;
+    
+  }
+
+  ion-item {
+    --background: linear-gradient(315deg, #e8c99b 0%, #e8bc85 74%);
+  }

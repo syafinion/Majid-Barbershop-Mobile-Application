@@ -1,0 +1,42 @@
+
+  ion-header {
+  
+    .titles {
+      position: relative;
+      padding: 0 1.2rem;
+      background: var(--ion-color-brown);
+      h4, h6 {
+        margin: 0;
+        margin-bottom: 4px;
+        color: #fff;
+        ion-icon {
+          vertical-align: middle;
+        }
+      }
+      h4 {
+        text-align: center;
+        font-weight: 900;
+        font-size: 26px;
+      }
+      h6 {
+        font-weight: 600;
+      }
+    }
+  
+  }
+  ion-content {
+  align-items: center;
+    margin-bottom: 30px;
+    // overwrite inline styles
+    --offset-bottom: auto !important;
+    --overflow: hidden;
+    overflow: auto;
+    &::-webkit-scrollbar {
+     display: none;
+    }
+    background: linear-gradient(315deg, #a44200 0%, #f2c17d 74%);
+}
+
+ion-card{
+    align-items: center;
+}

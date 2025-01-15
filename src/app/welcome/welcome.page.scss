@@ -1,0 +1,98 @@
+*{
+  font-weight: 300;
+}
+
+ion-content.background{
+  --background: url(/assets/background2.png) 0 0/107% 100% no-repeat;
+}
+
+ion-text {
+  position: absolute;
+  top: 25%;
+
+h1 {
+  font-size: 42px;
+  background: -webkit-linear-gradient(#ffffff, #d7e1ec);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+p {
+  font-size: 17px;
+  color: #dfdfdf;
+}
+}
+
+
+.actions {
+  position: absolute;
+  width: 90%;
+  bottom: 16px;
+}
+
+ion-button {
+  --border-radius: 9px;
+  --box-shadow: none;
+  text-transform: initial;
+  font-size: 12px;
+}
+
+.login-buttons {
+  display: flex;
+  justify-content: space-between;
+  ion-button {
+    width: 45%;
+    --background: linear-gradient(315deg, #e8c99b 0%, #e8bc85 74%);
+     --color: O#3b3b3b;
+    --border-style: solid;
+    --border-color: #eeeeee;
+     --border-width: 0.5px;
+  }
+  ion-avatar {
+    height: 12px;
+    width: 12px;
+    margin-right: 7px;
+    margin-bottom: 1px
+ }
+}
+
+.separator {
+  display: flex;
+  justify-content: center;
+  margin: 8px auto 10px;
+  font-size: 12px;
+  position: relative;
+
+  .line {
+      position: absolute;
+      border-top: 1px solid #dfdfdf;
+      width: 50px;
+      height: 2px;
+      top: 8px;
+  }
+
+  .right {
+      right: 98px;
+  }
+
+  .left {
+      left: 98px;
+  }
+}
+
+.signup-btn {
+  --background: linear-gradient(315deg, #ca7968 0%, #0c0c0c 74%);
+
+}
+
+.login {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 16px;
+  color: #dfdfdf;
+
+  a {
+      color: #ff4e00;
+      font-weight: 400;
+      margin-left: 5px;
+  }
+}

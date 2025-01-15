@@ -1,0 +1,53 @@
+<ion-header color="brown">
+  <ion-toolbar color="brown">
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <h4> About Us <ion-icon name="book"></ion-icon></h4>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-card>
+  <ion-card-header>
+    <ion-text color="light" style="font-family: 'EB Garamond', serif; font-size: large;"><b>Kedai Gunting Rambut Abdul Majid </b><ion-icon name="briefcase-sharp"></ion-icon></ion-text>
+  </ion-card-header>
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide>
+      <ion-card>
+        <img src="assets/about1.jpg"/>
+      </ion-card>
+    </ion-slide>
+
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/about3.jpg"/>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/about2.jpg"/>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-card-content  style="text-align: justify;">
+    <ion-text color="light">In May of 1999, Abdul Majid opened their first Barber Shop that is located at Seremban, Negeri Sembilan. The Barbers was founded on the idea of reviving the old-fashioned barber shop experience and the hope that men of all ages would enjoy a haircut by Barbers who specialize in cutting only men's hair.
+    </ion-text>
+<ion-item color="none">
+  <ion-text color="light"><b>Contact Us </b><ion-icon name="call-outline"></ion-icon></ion-text>
+</ion-item>
+    <ion-item color="none" lines="none">
+      <ion-button color="dark" shape="round" href="https://www.facebook.com/KedaiGuntingRambutMajid/">
+      <ion-icon slot="start" style="font-size: xx-large;" name="logo-facebook" color="primary"></ion-icon>
+    </ion-button>
+      <ion-text  color="light" style="font-family: 'Roboto Mono', monospace; font-size: small;">Facebook Kedai Gunting Rambut Abdul Majid</ion-text>
+    </ion-item>
+  </ion-card-content>
+</ion-card>
+</ion-content>
+
+

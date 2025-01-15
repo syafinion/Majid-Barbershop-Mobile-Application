@@ -1,0 +1,22 @@
+
+ion-content {
+    margin-bottom: 30px;
+      // overwrite inline styles
+      --offset-bottom: auto !important;
+      --overflow: hidden;
+      overflow: auto;
+      &::-webkit-scrollbar {
+       display: none;
+      }
+    background: linear-gradient(315deg, #000000 0%, #422419 74%);
+  }
+
+ion-card{
+    --background:  linear-gradient(315deg, #a55c1b 0%, #000000 74%);
+}
+
+ion-slides {
+    --bullet-background: white;
+    --bullet-background-active: yellow;
+ }
+

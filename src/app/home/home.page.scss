@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+ion-header {
+  background: linear-gradient(315deg, #a55c1b 0%, #000000 74%);
+  ion-list {
+      background: var(--ion-color-brown);
+      border-radius: 0 0 20px 20px;
+      padding-bottom: 7vh;
+      ion-item {
+          ion-label {
+              font-weight: bold;
+              font-size: 1.2rem;
+          }
+          ion-avatar {
+            background: white;
+          }
+        }
+      }
+    .popover {
+      margin: 0 8px;
+      ion-button {
+        --border-radius: 20px;
+        margin-top: -30px;
+        --background:  linear-gradient(315deg, #a55c1b 0%, #000000 74%);
+        display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-family: 'Roboto Mono', monospace;
+      }
+      ion-icon {
+        margin-right: 1px;
+     }
+    }
+  }
+
+//content
+ion-content {
+    margin-bottom: 30px;
+    // overwrite inline styles
+    --offset-bottom: auto !important;
+    --overflow: hidden;
+    overflow: auto;
+    &::-webkit-scrollbar {
+     display: none;
+    }
+   background: linear-gradient(315deg, #a55c1b 0%, #000000 74%);
+
+    ion-slides {
+      ion-card {
+        height: 30vh;
+        width: 100%;
+        border-radius: 10px;
+        --background: var(--ion-color-white);
+        ion-card-header {
+          ion-label, p {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: var(--ion-color-light);
+          }
+        }
+        ion-card-content {
+          img {
+            height: 20vh;
+          }
+        }
+      }
+      //background popular hairstyle
+      .bgCard {
+        background-image: url('/assets/cover2.gif');
+        background-position: fixed;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .featured {
+        
+        height: 40vh;
+        ion-card-header {
+          background-image: url('/assets/blank2.png');
+        background-position: fixed;
+        background-repeat: no-repeat;
+        background-size: 800px;
+          padding: 0;
+          img {
+            border-radius: 10px;
+            height: 30vh;
+          }
+        }
+      }
+      .price {
+        align-self: end;
+        color: #8B4513;
+        margin-top: 11px;
+      }
+    }
+  
+  }
+
+
+  .font-bold {
+    font-weight: bold;
+  }
+//menu
+  ion-menu-button {
+    color: white;
+    margin-left: 2px;
+  }
+
+//title
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 32px;
+  
+    h2 {
+        margin: 0 0 0 16px;
+        color: #ffffff;
+    }
+  
+    p {
+        margin: 0 16px 0 0;
+        color: #000000;
+    }
+  }
+
+  p{
+    color: #000000;
+  }
+  

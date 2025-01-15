@@ -1,0 +1,37 @@
+<ion-header class="ion-no-border">
+  <ion-list lines="none">
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-item color="brown">
+    <ion-label>Hi, Name</ion-label>
+    <ion-avatar slot="end">
+      <img src=""/>
+    </ion-avatar>
+  </ion-item>
+  </ion-list>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="ion-margin-top">
+    <ion-item lines="none" color="light">
+      <ion-label class="title">Popular</ion-label>
+      <ion-button slot="end" size="small" shape="round" color="brown">View all</ion-button>
+    </ion-item>
+    <ion-row>
+      <ion-slides [options]="slideOpts">
+        <ion-slide *ngFor="leet item of popularItems"></ion-slide>
+        <ion-card class="bgCard" [routerLink]="['/', 'app', 'items', items.id]">
+          <ion-card-header>
+            <ion-label>{{item?.name}}
+              <p>{{item?.price}}</p>
+            </ion-label>
+          </ion-card-header>
+          <ion-card-content>
+            <img [src]="item?.img" />
+          </ion-card-content>
+        </ion-card>
+      </ion-slides>
+    </ion-row>
+  </ion-grid>
+</ion-content>

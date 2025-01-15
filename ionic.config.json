@@ -1,0 +1,8 @@
+{
+  "name": "MajidBarbershop3",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,45 @@
+ion-content {
+  margin-bottom: 30px;
+    // overwrite inline styles
+    --offset-bottom: auto !important;
+    --overflow: hidden;
+    overflow: auto;
+    &::-webkit-scrollbar {
+     display: none;
+    }
+  background: linear-gradient(315deg, #a55c1b 0%, #000000 74%);
+}
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    font-family: 'Merriweather', serif;
+  
+    h2 {
+        margin: 0 0 0 16px;
+        color: #ffffff;
+    }
+  
+    p {
+        margin: 0 16px 0 0;
+        color: #656565;
+    }
+  }
+  ion-card {
+    --background: linear-gradient(315deg, #e8c99b 0%, #e8bc85 74%);
+  }
+
+  ion-item {
+    --background: linear-gradient(315deg, #e8c99b 0%, #e8bc85 74%);
+  }
+
+  ion-button {
+    --background: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
+  }
+
+  ion-slides {
+    --bullet-background: rgb(95, 93, 93);
+    --bullet-background-active: rgb(255, 60, 0);
+ }

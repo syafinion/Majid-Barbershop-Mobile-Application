@@ -1,0 +1,51 @@
+<ion-header color="brown">
+  <ion-toolbar color="brown">
+    <ion-buttons slot="start">
+      <ion-button routerLink="/recent">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <h4>Completed<ion-icon name="people-outline"></ion-icon></h4>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+<ion-content>
+  <ion-text class="ion-text-center"><h5><b>Your Booking is</b></h5>
+  <h5><b>Completed!</b></h5></ion-text>
+  <ion-item>
+    <img src="assets/comp.png" />
+  </ion-item>
+
+  <ion-item lines="none">
+    <ion-text>
+      <p><b>Booking Details</b></p>
+    </ion-text>
+  </ion-item>
+  <ion-item lines="none">
+    <p slot="start">Your Booking <br> Number</p>
+    <p slot="end">#{{ post.id }}</p>
+  </ion-item>
+  <ion-item lines="full">
+    <p slot="start">Name: </p>
+    <p slot="end">{{ post.userName }}</p>
+  </ion-item>
+  <ion-button  expand="full" class ="ion-text-center" id="side-button" color="grey"><ion-text color="dark"><b>View Details </b> <ion-icon name="caret-down-circle"></ion-icon></ion-text></ion-button>
+  <ion-item lines="none">
+    <p slot="start"><b>Services:</b> </p>
+    <p slot="end">{{ post.services }}</p>
+  </ion-item>
+  <ion-item lines="none">
+    <p slot="start"><b>Date:</b> </p>
+    <p slot="end">{{ post.pickDate }}</p>
+  </ion-item>
+  <ion-item lines="none">
+    <p slot="start"><b>Time:</b> </p>
+    <p slot="end">{{ post.pickTime }}</p>
+  </ion-item>
+
+
+
+
+<ion-button expand="full" color="brown">Book Again!</ion-button>
+</ion-content>
